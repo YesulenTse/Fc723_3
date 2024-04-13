@@ -16,6 +16,21 @@ def euclidean_algorithm(n1, n2):
         # repeat with n2 and the remainder of n1 divided by the n2
         return euclidean_algorithm(n2, n1 % n2)
 
-# provide values and print the result
-gcd = euclidean_algorithm(39, 120)
-print("The GCD is", gcd)
+
+if __name__ == "__main__":
+    try:
+        # ask the user for input numbers
+        n1 = int(input("Enter the first number: "))
+        n2 = int(input("Enter the second number: "))
+
+        # check for valid input (both numbers should be positive integers)
+        if n1 <= 0 or n2 <= 0:
+            raise ValueError("Input numbers must be positive integers.")
+
+        # call the function to calculate the gcd
+        gcd = euclidean_algorithm(n1, n2)
+        print("The GCD is", gcd)
+
+    except ValueError as ve:
+        # handle invalid input error
+        print("Error:", ve)
