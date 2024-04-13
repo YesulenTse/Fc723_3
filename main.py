@@ -1,3 +1,8 @@
+# link to github repository:
+# https://github.com/YesulenTse/Fc723_3
+
+
+# pseudocode:
 # Function RecursiveEuclideanAlgorithm(n1, n2)
 #     If n2 == 0 Then
 #         Return n1
@@ -6,6 +11,8 @@
 #     End If
 # End Function
 
+
+# application
 # define the function
 def euclidean_algorithm(n1, n2):
     # base case is when n2 becomes 0, assuming n1 will always be greater
