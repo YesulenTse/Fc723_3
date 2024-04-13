@@ -1,4 +1,12 @@
-# define the function using recursion
+# Function RecursiveEuclideanAlgorithm(n1, n2)
+#     If n2 == 0 Then
+#         Return n1
+#     Else
+#         Return RecursiveEuclideanAlgorithm(n2, n1 MOD n2)
+#     End If
+# End Function
+
+# define the function
 def euclidean_algorithm(n1, n2):
     # base case is when n2 becomes 0, assuming n1 will always be greater
     if n2 == 0:
